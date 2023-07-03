@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: green;
+}
+
+.headerbagicon {
+  background-color: #0d6efd;
+  padding: 12.5px 12px;
+  border-radius: 15px;
+}
