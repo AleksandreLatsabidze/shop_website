@@ -1,14 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-header {
-  background-color: green;
+body {
+  background-color: #f7fafc;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #fff;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
 }
 
-.headerbagicon {
+.brand-div {
+  display: flex;
+  align-items: center;
+}
+.brand-div > span {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
   background-color: #0d6efd;
-  padding: 12.5px 12px;
-  border-radius: 15px;
+  text-align: center;
+  line-height: 52px;
+  margin-right: 13px;
+  border-radius: 7px;
+  position: relative;
+}
+.brand-div > span::before {
+  content: "";
+  background-color: #0d6efd33;
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  left: 6px;
+  border-radius: 7px;
+}
+.brand-div > h1 {
+  color: #8cb7f5;
+}
+.search-div form input[type="text"] {
+  width: 421px;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid #0d6efd;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right: 0px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.search-div form select {
+  width: 145px;
+  height: 40px;
+  border: 2px solid#0D6EFD;
+  border-left: 1px solid #0d6efd;
+  padding: 0px 5px;
+  outline: none;
+  border-right: 0px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.search-div form input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  background-color: #127fff;
+  color: white;
+  border: 2px solid#0D6EFD;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.search-div form {
+  display: flex;
+}
+.my-options > .my-option-divs {
+  margin: 0 10px;
+  text-align: center;
+}
+.my-option-divs:last-child {
+  margin-right: 0px;
+}
+.my-options {
+  display: flex;
+}
+.my-options > .my-option-divs h3 {
+  font-size: 12px;
+  color: #8b96a5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.my-options > .my-option-divs img {
+  width: 20px;
+}
+.my-option-divs span {
+  display: block;
+  height: 26px;
+}
+.menu {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 17px 0px;
+}
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.navbar ul li a img {
+  margin-right: 5px;
+}
+.right-menu {
+  display: flex;
+}
+.my-option-divs a {
+  text-decoration: none;
+}
+.right-menu form select {
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.shipp-to span img {
+  vertical-align: middle;
+}
+.shipp-to {
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.shipp-to::before {
+  content: "";
+  background-image: url(/img/icon/bottom.png);
+  width: 12px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -4px;
+}
+.right-menu form {
+  margin-right: 55px;
 }
