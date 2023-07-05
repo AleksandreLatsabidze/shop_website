@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Brand Shop</title>
   </head>
   <body>
@@ -176,22 +177,23 @@
           <div class="product-offer">
             <h2>Deals and offers</h2>
             <h3>Hygiene equipments</h3>
-            <div class="time-div">
+            <p id="num"></p>
+            <div class="time-div" id="countDiv">
               <div class="counter-item">
-                <span>04</span>
-                <span>Days</span>
+                <span class="days"></span>
+                <span class="smallText">Days</span>
               </div>
               <div class="counter-item">
-                <span>13</span>
-                <span>Hour</span>
+                <span class="hours"></span>
+                <span class="smallText">Hour</span>
               </div>
               <div class="counter-item">
-                <span>34</span>
-                <span>Min</span>
+                <span class="minutes"></span>
+                <span class="smallText">Min</span>
               </div>
               <div class="counter-item">
-                <span>56</span>
-                <span>Sec</span>
+                <span class="seconds"></span>
+                <span class="smallText">Sec</span>
               </div>
             </div>
           </div>
@@ -225,5 +227,7 @@
         </div>
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
