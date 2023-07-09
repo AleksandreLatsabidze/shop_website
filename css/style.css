@@ -623,3 +623,25 @@ body {
   cursor: pointer;
   line-height: 40px;
 }
+
+.recomended-items {
+  margin-top: 20px;
+}
+
+.recomended-items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 17px;
+}
+
+.block-title {
+  margin-bottom: 15px;
+}
+
+.rec-grid-item {
+  background-color: red;
+  border-radius: 5px;
+  height: 310px;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+}
