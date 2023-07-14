@@ -385,8 +385,8 @@ body {
 }
 .product-info {
   display: flex;
-
   border-left: 1px solid #ffe3e3;
+  width: 100%;
 }
 .product-info > div > img {
   height: 139px;
@@ -399,7 +399,7 @@ body {
 .product-img {
   text-align: center;
   border-right: 1px solid #e0e0e0;
-  width: 179px;
+  width: 25%;
   padding: 20px 0px;
 }
 .product-img:last-child {
