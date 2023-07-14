@@ -766,6 +766,7 @@ body {
 }
 .form-input {
   margin-top: 20px;
+  text-align: center;
 }
 .form-input form input[type="email"] {
   width: 274px;
