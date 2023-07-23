@@ -16,8 +16,10 @@ body {
   background-color: #f7fafc;
 }
 .container {
-  width: 1180px;
+  max-width: 1210px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0px 15px;
 }
 .header {
   background-color: #fff;
@@ -132,6 +134,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.navbar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.navbar::-webkit-scrollbar-track {
+  background-color: #e6e3e3;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: #127fff;
+}
+
 .navbar ul {
   display: flex;
   align-items: center;
@@ -258,6 +273,11 @@ body {
   max-width: 665px;
   width: 100%;
   position: relative;
+}
+.sect-baner img {
+  width: 100%;
+  object-fit: cover;
+  height: 360px;
 }
 
 .sect-user {
@@ -1258,4 +1278,11 @@ input[type="range"]::-moz-range-thumb {
 }
 .pages-num ul li {
   border-right: 0;
+}
+
+/* responsive */
+
+.icon-navbar {
+  display: none;
+  margin-right: 20px;
 }
