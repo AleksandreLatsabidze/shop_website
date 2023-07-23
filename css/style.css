@@ -278,6 +278,7 @@ body {
   width: 100%;
   object-fit: cover;
   height: 360px;
+  display: block;
 }
 
 .sect-user {
@@ -690,9 +691,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 .rec-grid-item img {
-  width: 169px;
+  width: 100%;
   height: 193px;
   margin-left: 13px;
+  object-fit: contain;
 }
 .extraservice-divs {
   display: grid;
@@ -713,6 +715,7 @@ body {
   background-color: white;
   border-radius: 3px;
 }
+
 .position-img {
   position: absolute;
   bottom: 55px;
@@ -1285,4 +1288,118 @@ input[type="range"]::-moz-range-thumb {
 .icon-navbar {
   display: none;
   margin-right: 20px;
+}
+.product-info::-webkit-scrollbar {
+  height: 7px;
+}
+
+.product-info::-webkit-scrollbar-track {
+  background-color: #e6e3e3;
+}
+
+.product-info::-webkit-scrollbar-thumb {
+  background-color: #7c7e80;
+}
+
+.left-side-abs h2 span {
+  width: 130px;
+  display: inline-block;
+}
+
+.homeproduct-right::-webkit-scrollbar {
+  height: 7px;
+}
+
+.homeproduct-right::-webkit-scrollbar-track {
+  background-color: #e6e3e3;
+}
+
+.homeproduct-right::-webkit-scrollbar-thumb {
+  background-color: #7c7e80;
+}
+
+.extraservice-imgs > img {
+  width: 100%;
+}
+.position-img {
+  width: 53px !important;
+  height: 53px !important;
+}
+.sidebar {
+  position: fixed;
+  left: -280px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  width: 280px;
+  height: 100%;
+  z-index: 4;
+  transition: left 0.4s;
+}
+.sidebar-blur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 3;
+  display: none;
+}
+#sidenavbar {
+  cursor: pointer;
+}
+.showsidebarblur {
+  display: block;
+}
+.showsidebar {
+  left: 0px;
+}
+.close-sidebar {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+
+  font-size: 27px;
+  color: #000;
+}
+.user-sidebar {
+  background-color: #eff2f4;
+  padding: 25px 18px;
+}
+.user-sidebar i {
+  font-size: 44px;
+  color: #b0b2b5;
+  margin-bottom: 10px;
+}
+
+.user-sidebar a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1c1c1c;
+}
+.sidebar-menu ul li {
+  padding: 20px 20px;
+}
+.sidebar-menu ul li a {
+  font-size: 16px;
+  display: block;
+  color: #1c1c1c;
+}
+
+.sidebar-menu ul li a span i {
+  color: #8b96a5;
+  font-size: 24px;
+}
+.sidebar-menu ul li a span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 2px;
+  margin-right: 15px;
+}
+.sidebar-lang {
+  border-top: 1px solid #dee2e7;
+  border-bottom: 1px solid #dee2e7;
+  margin-top: 5px;
 }

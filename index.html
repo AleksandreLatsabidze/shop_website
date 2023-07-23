@@ -12,11 +12,86 @@
     <title>Brand Shop</title>
   </head>
   <body>
+    <div id="sidebar" class="sidebar">
+      <div id="close" class="close-sidebar">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="user-sidebar">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <h3><a href="#">Sign in</a> |<a href="#"> Register</a></h3>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-home" aria-hidden="true"></i> </span
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-list" aria-hidden="true"></i> </span
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-heart-o" aria-hidden="true"></i> </span
+              >Favorites</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-laptop" aria-hidden="true"></i> </span>My
+              orders</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu sidebar-lang">
+        <ul>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-globe" aria-hidden="true"></i> </span
+              >English | USD
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-headphones" aria-hidden="true"></i> </span
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                ><i class="fa fa-info-circle" aria-hidden="true"> </i> </span
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#"><span> </span>User agreement</a>
+          </li>
+          <li>
+            <a href="#"><span> </span>Partnership</a>
+          </li>
+          <li>
+            <a href="#"><span> </span>Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sidebar-blur" class="sidebar-blur"></div>
+
     <header class="header">
       <div class="container">
         <div class="header-flex">
           <div class="brand-div">
-            <div class="icon-navbar">
+            <div id="sidenavbar" class="icon-navbar">
               <img src="img/icon/all_category.png" />
             </div>
             <span>
@@ -187,29 +262,33 @@
         </div>
       </div>
     </section>
-    <!-- <section class="product-sect">
+    <section class="product-sect">
       <div class="container">
         <div class="offers">
           <div class="product-offer">
-            <h2>Deals and offers</h2>
-            <h3>Hygiene equipments</h3>
-            <p id="num"></p>
-            <div class="time-div" id="countDiv">
-              <div class="counter-item">
-                <span class="days"></span>
-                <span class="smallText">Days</span>
-              </div>
-              <div class="counter-item">
-                <span class="hours"></span>
-                <span class="smallText">Hour</span>
-              </div>
-              <div class="counter-item">
-                <span class="minutes"></span>
-                <span class="smallText">Min</span>
-              </div>
-              <div class="counter-item">
-                <span class="seconds"></span>
-                <span class="smallText">Sec</span>
+            <div class="responsive-text">
+              <h2>Deals and offers</h2>
+              <h3>Hygiene equipments</h3>
+            </div>
+            <div class="responsive-time">
+              <p id="num"></p>
+              <div class="time-div" id="countDiv">
+                <div class="counter-item">
+                  <span class="days"></span>
+                  <span class="smallText">Days</span>
+                </div>
+                <div class="counter-item">
+                  <span class="hours"></span>
+                  <span class="smallText">Hour</span>
+                </div>
+                <div class="counter-item">
+                  <span class="minutes"></span>
+                  <span class="smallText">Min</span>
+                </div>
+                <div class="counter-item">
+                  <span class="seconds"></span>
+                  <span class="smallText">Sec</span>
+                </div>
               </div>
             </div>
           </div>
@@ -249,10 +328,7 @@
           <div class="left-side">
             <img src="img/other/outdoor.png" />
             <div class="left-side-abs">
-              <h2>
-                Home and <br />
-                outdoor
-              </h2>
+              <h2><span>Home and outdoor</span></h2>
               <button>Source now</button>
             </div>
           </div>
@@ -348,9 +424,7 @@
             <img src="img/other/sourcenowtwo.png" />
             <div class="left-side-abs">
               <h2>
-                Consumer <br />
-                electronics and <br />
-                gadgets
+                <span>Consumer electronics and gadgets</span>
               </h2>
               <button>Source now</button>
             </div>
@@ -830,7 +904,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/time.js"></script>
   </body>
