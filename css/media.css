@@ -1,11 +1,9 @@
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 375px) {
   #sidebar,
   #sidebar-blur {
     display: none !important;
   }
 }
-
-/* რეზოლუცია შევცვალე ჩემი ტელეფონის ზომაზე რო გამოჩენილიყო */
 
 @media only screen and (max-width: 390px) {
   .icon-navbar {
