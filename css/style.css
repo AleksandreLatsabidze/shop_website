@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
 }
-.brand-div > span {
+.brand-div > a > span {
   width: 44px;
   height: 44px;
   display: inline-block;
@@ -46,7 +46,7 @@ body {
   border-radius: 7px;
   position: relative;
 }
-.brand-div > span::before {
+.brand-div > a > span::before {
   content: "";
   background-color: #0d6efd33;
   height: 44px;
@@ -850,6 +850,9 @@ body {
 .last-icons {
   letter-spacing: 7px;
   margin-top: 20px;
+}
+.last-icons > img {
+  cursor: pointer;
 }
 .footer h3 {
   color: #1c1c1c;
@@ -1754,4 +1757,85 @@ input[type="range"]::-moz-range-thumb {
   font-size: 16px;
   font-weight: 400;
   color: #8b96a5;
+}
+.related-products {
+  background-color: #fff;
+  padding: 20px 15px;
+  border: 1px solid #dee2e7;
+  border-radius: 6px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.related-products > h2 {
+  font-size: 20px;
+  color: #1c1c1c;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.relatedproduct-item {
+  width: 172px;
+}
+.relatedproduct-item > img {
+  width: 172px;
+  height: 172px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  border-radius: 6px;
+}
+.relatedproduct-item > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #505050;
+  margin: 10px 0px;
+}
+.relatedproduct-item > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8b96a5;
+}
+.relatedproduct-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.super-sect {
+  background-color: #005ade;
+  height: 120px;
+  border-radius: 8px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.supersect-btn > button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff9017;
+  border: 0px solid #ff9017;
+  border-radius: 6px;
+  padding: 10px 16.5px;
+  cursor: pointer;
+}
+.supersect-name > p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+}
+.supersect-name > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 19.36px;
+}
+.supersect-item {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.supersect-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
 }
