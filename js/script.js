@@ -1,3 +1,9 @@
+document.querySelectorAll(".catitem-h2").forEach((element) =>
+  element.addEventListener("click", (event) => {
+    element.nextElementSibling.classList.toggle("catshow-hide");
+  })
+);
+
 document.getElementById("my-select").addEventListener("change", function () {
   console.log("You selected: ", this.value);
   window.location.href = this.value;

@@ -932,7 +932,6 @@ body {
 }
 .category-item {
   border-top: 1px solid #dee2e7;
-  margin-bottom: 25px;
 }
 .right-sect {
   width: 100%;
@@ -2074,4 +2073,10 @@ input[type="range"]::-moz-range-thumb {
   width: calc(20% - 5px);
   justify-content: center;
   cursor: pointer;
+}
+.catshow-hide {
+  display: none;
+}
+.category-sub {
+  margin-bottom: 25px;
 }
