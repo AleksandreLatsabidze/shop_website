@@ -819,6 +819,9 @@ body {
   align-items: center;
   padding: 40px 0px 60px;
 }
+footer {
+  background-color: #fff;
+}
 
 .footer-logo > span {
   position: relative;
@@ -909,6 +912,7 @@ body {
   font-size: 16px;
   color: #606060;
   font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 .select-file {
   padding: 20px 0px;
@@ -1928,8 +1932,9 @@ input[type="range"]::-moz-range-thumb {
   background-color: #fff;
   border-radius: 6px;
   outline: none;
+  cursor: pointer;
 }
-.cartlist-btns button:first-child {
+.cartlist-btns a button:first-child {
   background-color: #127fff;
   font-size: 16px;
   font-weight: 500;
@@ -2093,5 +2098,126 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .filter-one .iphone-p {
+  display: none;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+  margin: 25px 0px;
+}
+.secure-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.secure-item > img {
+  padding: 13.5px 16px;
+  border-radius: 50%;
+  background-color: #dee2e7;
+  margin-right: 10px;
+}
+.secureitem-text > h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1c1c1c;
+  text-align: left;
+}
+.secureitem-text > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a9acb0;
+}
+
+.cust-item {
+  display: flex;
+  align-items: center;
+}
+.del-item {
+  display: flex;
+  align-items: center;
+}
+.secureitem-img {
+  padding: 11.5px 16px;
+  border-radius: 50%;
+  background-color: #dee2e7;
+  margin-right: 10px;
+}
+.custitem-img {
+  padding: 12px 14px;
+  border-radius: 50%;
+  background-color: #dee2e7;
+  margin-right: 10px;
+}
+.delitem-img {
+  padding: 14px 13px;
+  border-radius: 50%;
+  background-color: #dee2e7;
+  margin-right: 10px;
+}
+.save-sect {
+  background-color: #fff;
+  border: 1px solid #dee2e7;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.save-sect p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+.savesect-prod > img {
+  padding: 23px 38px;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  margin-top: 15px;
+  width: 275px;
+  height: 235px;
+  object-fit: contain;
+}
+.savesect-prod h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.savesect-prod h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #606060;
+  max-width: 184px;
+  margin-bottom: 8px;
+}
+
+.savesect-prod button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0d6efd;
+  background-color: #fff;
+  border: 1px solid #dee2e7;
+  outline: none;
+  border-radius: 6px;
+  padding: 9.5px 19px;
+  cursor: pointer;
+}
+.savesect-items {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.savesect-prod {
+  width: 25%;
+}
+.prod-laptop {
+  padding: 40px 33px;
+}
+.filter-one h4 {
+  display: none;
+}
+.filter-one .dot {
+  display: none;
+}
+.filter-one .iphone-btn {
   display: none;
 }
