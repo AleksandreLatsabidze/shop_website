@@ -6,6 +6,14 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 a {
   text-decoration: none;
 }
@@ -186,6 +194,8 @@ body {
 }
 .shipp-to span img {
   vertical-align: middle;
+  width: 22px;
+  height: 16px;
 }
 .shipp-to {
   position: relative;
@@ -197,7 +207,7 @@ body {
   font-weight: 500;
 }
 
-.shipp-to::before {
+#shippingbottom::before {
   content: "";
   background-image: url(../img/icon/bottom.png);
   width: 12px;
@@ -1154,12 +1164,12 @@ input[type="range"]::-moz-range-thumb {
   align-items: center;
 }
 .new-price {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   margin-right: 10px;
 }
 .old-price {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #8b96a5;
 }
@@ -1224,6 +1234,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: #ffffff;
   color: #0d6efd;
   font-size: 20px;
+  cursor: pointer;
 }
 .new-pages {
   display: flex;
@@ -2204,7 +2215,6 @@ input[type="range"]::-moz-range-thumb {
 }
 .savesect-items {
   display: flex;
-  /* justify-content: space-between; */
 }
 .savesect-prod {
   width: 25%;
@@ -2220,4 +2230,60 @@ input[type="range"]::-moz-range-thumb {
 }
 .filter-one .iphone-btn {
   display: none;
+}
+.filter-one .iphone-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  text-align: left;
+}
+.filter-one .iphone-data {
+  order: 1;
+  color: #606060;
+}
+.filter-one .heart-icon {
+  bottom: 70px;
+  top: initial;
+}
+.filter-one {
+  text-align: center;
+}
+.iphone-sale > img {
+  object-fit: contain;
+  width: 184px;
+  height: 184px;
+}
+.heart-icon:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.heart-icon-active {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+#shippingflag > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 5px;
+}
+#shippingflag img {
+  width: 22px;
+  height: 16px;
+}
+#shippingflag {
+  position: absolute;
+  right: 12px;
+  top: 25px;
+  background: #e1dada;
+  padding: 2px 8px;
+  border-radius: 7px;
+  display: none;
+}
+.shipp-to {
+  position: relative;
+}
+.flagshow {
+  display: block !important;
 }

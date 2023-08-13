@@ -9,13 +9,92 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="img/icon/brand.png" type="images/png" />
+
     <title>Mobile accessory</title>
   </head>
   <body>
+    <div id="sidebar" class="sidebar">
+      <div id="close" class="close-sidebar">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="user-sidebar">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <h3><a href="#">Sign in</a> |<a href="#"> Register</a></h3>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-home" aria-hidden="true"></i> </span
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-list" aria-hidden="true"></i> </span
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-heart-o" aria-hidden="true"></i> </span
+              >Favorites</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-laptop" aria-hidden="true"></i> </span>My
+              orders</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu sidebar-lang">
+        <ul>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-globe" aria-hidden="true"></i> </span
+              >English | USD
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span><i class="fa fa-headphones" aria-hidden="true"></i> </span
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                ><i class="fa fa-info-circle" aria-hidden="true"> </i> </span
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#"><span> </span>User agreement</a>
+          </li>
+          <li>
+            <a href="#"><span> </span>Partnership</a>
+          </li>
+          <li>
+            <a href="#"><span> </span>Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sidebar-blur" class="sidebar-blur"></div>
     <header class="header">
       <div class="container">
         <div class="header-flex">
           <div class="brand-div">
+            <div id="sidenavbar" class="icon-navbar">
+              <img src="img/icon/all_category.png" />
+            </div>
             <a href="index.html"
               ><span>
                 <img src="img/icon/brand.png" />
@@ -111,7 +190,40 @@
                 </select>
               </form>
               <div class="shipp-to">
-                <span>Ship to <img src="img/flags/germany.png" /></span>
+                <span id="shippingbottom"
+                  >Ship to <img id="mainimgshipp" src="img/flags/germany.png"
+                /></span>
+                <div id="shippingflag">
+                  <ul>
+                    <li>
+                      <img class="shippimg" src="img/flags/usa.png" alt="" />
+                    </li>
+                    <li>
+                      <img
+                        class="shippimg"
+                        src="img/flags/greatbritain.png"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="shippimg"
+                        src="img/flags/germany.png"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="shippimg"
+                        src="img/flags/australia.png"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img class="shippimg" src="img/flags/italy.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -364,6 +476,7 @@
                 <select>
                   <option value="feature">Featured</option>
                 </select>
+
                 <div class="filter-design-flex">
                   <span id="filter-one" class="filter-design">
                     <img src="img/icon/gridview.png" />
@@ -565,6 +678,30 @@
                 ></span>
               </div>
             </div>
+            <script>
+              const boxes = document.getElementsByClassName("iphone-sale");
+
+              const xxxx = document.getElementById("iphone-sale-flex");
+
+              document
+                .getElementById("filter-one")
+                .addEventListener("click", function () {
+                  xxxx.classList.add("fl-iphone");
+
+                  for (const box of boxes) {
+                    box.classList.add("filter-one");
+                  }
+                });
+
+              document
+                .getElementById("filter-two")
+                .addEventListener("click", function () {
+                  xxxx.classList.remove("fl-iphone");
+                  for (const box of boxes) {
+                    box.classList.remove("filter-one");
+                  }
+                });
+            </script>
             <div class="new-pages">
               <div class="show-more">
                 <span>
