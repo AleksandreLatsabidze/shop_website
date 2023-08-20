@@ -37,6 +37,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0px;
+  flex-wrap: wrap;
 }
 
 .brand-div {
@@ -2287,4 +2288,21 @@ input[type="range"]::-moz-range-thumb {
 }
 .flagshow {
   display: block !important;
+}
+.salmon {
+  overflow: hidden;
+}
+.sidebarshipp {
+  padding: 20px;
+}
+.sidebarshipp .right-menu form {
+  margin-right: 0px;
+}
+.sidebarshipp .right-menu {
+  justify-content: space-between;
+  display: flex !important;
+}
+
+.flag-name {
+  width: 120px;
 }

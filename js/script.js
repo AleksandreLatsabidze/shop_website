@@ -27,10 +27,14 @@ const element = document.getElementById("sidebar-blur");
 const sidebar = document.getElementById("sidebar");
 const closesidebar = document.getElementById("close");
 document.getElementById("sidenavbar").addEventListener("click", function () {
+  document.body.classList.add("salmon");
+
   element.classList.add("showsidebarblur");
   sidebar.classList.add("showsidebar");
 });
 document.getElementById("close").addEventListener("click", function () {
+  document.body.classList.remove("salmon");
+
   element.classList.remove("showsidebarblur");
   sidebar.classList.remove("showsidebar");
 });

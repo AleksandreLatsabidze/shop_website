@@ -1,13 +1,70 @@
-@media only screen and (min-width: 390px) {
+@media only screen and (max-width: 1230px) {
+  .search-div form input[type="text"] {
+    width: 350px;
+  }
+  .my-option-divs:nth-child(2) {
+    display: none;
+  }
+  .my-option-divs:nth-child(3) {
+    display: none;
+  }
+  .my-options > .my-option-divs h3 {
+    display: none;
+  }
+  .icon-navbar {
+    display: block;
+  }
+
+  .right-menu {
+    display: none;
+  }
+
+  .sect-user {
+    display: none;
+  }
+  .sect-flex {
+    justify-content: inherit;
+  }
+  .sect-baner {
+    max-width: inherit;
+  }
+}
+
+@media only screen and (min-width: 1230px) {
   #sidebar,
   #sidebar-blur {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 390px) {
-  .icon-navbar {
-    display: block;
+@media only screen and (max-width: 980px) {
+  .search-div form input[type="text"] {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .search-div {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  .search-div form input[type="submit"] {
+    width: 80px;
+  }
+  .search-div form select {
+    width: 83px;
+  }
+
+  .sect-user {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .flags {
+    justify-content: center;
   }
   .header-flex {
     flex-wrap: wrap;
@@ -16,19 +73,7 @@
     order: 3;
     width: 100%;
   }
-  #my-select {
-    display: none;
-  }
-  .search-div form input[type="submit"] {
-    display: none;
-  }
 
-  .search-div form input[type="text"] {
-    width: 100%;
-    border: 2px solid #dee2e7;
-    border-radius: 6px;
-    background-color: #f7fafc;
-  }
   .search-div {
     margin-top: 15px;
   }
@@ -85,6 +130,14 @@
     margin: 0;
     background-color: none;
   }
+  .sect-baner {
+    max-width: 100%;
+  }
+
+  .supplier-flex {
+    justify-content: center;
+  }
+
   .banner-text > h2,
   h1 {
     font-size: 20px !important;
@@ -244,8 +297,7 @@
     gap: 10px 15px;
   }
   .position-img {
-    top: 40px;
-    bottom: initial;
+    bottom: 46px;
     width: 45px !important;
     height: 45px !important;
   }
@@ -280,5 +332,13 @@
   }
   .footer-getapp {
     margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .footer-getapp {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
