@@ -1,3 +1,11 @@
+const mainFlag = document.getElementById("mainflag-js");
+document
+  .getElementById("countryflag-js")
+  .addEventListener("change", function () {
+    const flagUrl = "img/flags/" + this.value + ".png";
+    mainFlag.setAttribute("src", flagUrl);
+  });
+
 document.querySelectorAll(".catitem-h2").forEach((elementcatupdown) =>
   elementcatupdown.addEventListener("click", (event) => {
     elementcatupdown.nextElementSibling.classList.toggle("catshow-hide");
@@ -40,5 +48,13 @@ document.querySelectorAll(".shippimg").forEach((shippimg) =>
     const seeshippimg = shippimg.getAttribute("src");
     mainimgshipp.setAttribute("src", seeshippimg);
     elementshipp.classList.remove("flagshow");
+  })
+);
+
+const mainImg = document.getElementById("mainimg-js");
+document.querySelectorAll(".shirt-imgs img").forEach((shippimg) =>
+  shippimg.addEventListener("click", (event) => {
+    const seeshippimg = shippimg.getAttribute("src");
+    mainImg.setAttribute("src", seeshippimg);
   })
 );
