@@ -342,3 +342,9 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .search-div form input[type="text"] {
+    width: 180px;
+  }
+}
