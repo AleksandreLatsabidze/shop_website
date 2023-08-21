@@ -37,32 +37,32 @@
   }
 }
 
-@media only screen and (max-width: 980px) {
-  .search-div form input[type="text"] {
-    width: 250px;
+@media only screen and (max-width: 1170px) {
+  .left-sect {
+    max-width: 100%;
+    padding-right: 0px;
   }
-}
-@media only screen and (max-width: 850px) {
-  .search-div {
-    order: 3;
-    width: 100%;
-    justify-content: center;
+  .left-sect form {
     display: flex;
-    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
   }
-  .search-div form input[type="submit"] {
-    width: 80px;
+  .right-sect-flex {
+    flex-wrap: wrap;
   }
-  .search-div form select {
-    width: 83px;
+  .category-item {
+    width: 33.333%;
+    padding-right: 15px;
   }
 
-  .sect-user {
-    display: none;
+  .catitem-h2 span {
+    margin-left: 10px;
+  }
+  .right-sect {
+    max-width: 100%;
   }
 }
-
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1030px) {
   .flags {
     justify-content: center;
   }
@@ -138,8 +138,10 @@
     justify-content: center;
   }
 
-  .banner-text > h2,
-  h1 {
+  .banner-text h2 {
+    font-size: 20px !important;
+  }
+  .banner-text h1 {
     font-size: 20px !important;
   }
   .banner-text button {
@@ -298,8 +300,6 @@
   }
   .position-img {
     bottom: 46px;
-    width: 45px !important;
-    height: 45px !important;
   }
   .extraserv-text {
     margin-top: 10px;
@@ -335,16 +335,117 @@
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .search-div form input[type="text"] {
+    width: 250px;
+  }
+  .filter-design-flex {
+    display: none;
+  }
+  #iphone-sale-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .iphone-sale {
+    display: block;
+    width: calc(33.333% - 15px);
+    text-align: center;
+  }
+  .iphone-p {
+    display: none;
+  }
+  .iphone-data {
+    order: 1;
+    color: #606060;
+  }
+  .iphone-order,
+  .iphone-shipp,
+  .dot {
+    display: none;
+  }
+  .iphone-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    text-align: left;
+  }
+  .iphone-btn {
+    display: none;
+  }
+  .heart-icon {
+    bottom: 70px;
+    top: initial;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .search-div {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  .search-div form input[type="submit"] {
+    width: 80px;
+  }
+  .search-div form select {
+    width: 83px;
+  }
+
+  .sect-user {
+    display: none;
+  }
+  .category-item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .iphone-sale {
+    width: calc(50% - 15px);
+  }
+  .mobile-item {
+    flex-direction: column;
+  }
+  .right-flex {
+    margin-top: 10px;
+  }
+  .heart-icon {
+    bottom: inherit;
+    top: 10px;
+    right: 7px;
+  }
+}
+
 @media only screen and (max-width: 530px) {
   .footer-getapp {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
+  .extraservice-divs {
+    grid-template-columns: 1fr;
+  }
+  .iphone-sale > img {
+    width: 100%;
+    height: 130px;
+  }
+  .category-item {
+    width: 100%;
+  }
+  .new-price {
+    font-size: 16px;
+  }
+  .iphone-data {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 460px) {
   .search-div form input[type="text"] {
     width: 180px;
+  }
+  .right-supplier form input[name="quality"] {
+    max-width: 130px;
   }
 }
